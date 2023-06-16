@@ -13,9 +13,9 @@ html, body {
 .form-structor {
   background-color: #222;
   border-radius: 15px;
-  height: 400px;
-  width: 300px;
-  position: relative;
+  height: 550px;
+  width: 400px;
+  position: top;
   overflow: hidden;
 }
 .form-structor::after {
@@ -133,7 +133,7 @@ html, body {
   left: 50%;
   top: -20px;
   -webkit-transform: translate(-50%, 0);
-  background-color: var(--tg-theme-bg-color);
+  background-color: #fff;
   width: 200%;
   height: 250px;
   border-radius: 50%;
