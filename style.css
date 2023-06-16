@@ -3,8 +3,8 @@
 
 html,body {
 	position: relative;
-	min-height: 100vh;
-	background-color: #E1E8EE;
+	min-height: 50vh;
+	background-color: var(--tg-theme-bg-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -16,8 +16,8 @@ html,body {
 .form-structor {
 	background-color: #222;
 	border-radius: 15px;
-	height: 350px;
-	width: 300px;
+	height: 550px;
+	width: 350px;
 	position: relative;
 	overflow: hidden;
 	
@@ -28,7 +28,7 @@ html,body {
 		top: 0;right:0;bottom:0;left:0;
 		background-repeat: no-repeat;
 		background-position: left bottom;
-		background-size: 300px;
+		background-size: 500px;
 		background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf884ad570b50659c5fa2dc2cfb20ecf&auto=format&fit=crop&w=1000&q=100');
 	}
 	
