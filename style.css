@@ -13,8 +13,8 @@ html, body {
 .form-structor {
   background-color: var(--tg-theme-bg-color);
   border-radius: 15px;
-  height: 500px;
-  width: 370px;
+  height: 502px;
+  width: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -27,8 +27,8 @@ html, body {
   bottom: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 850px;
+  background-position: top;
+  background-size: 900px;
   background-image: url('https://i.ibb.co/Ykmhwtc/yesninib.png');
 }
 .form-structor .signup {
