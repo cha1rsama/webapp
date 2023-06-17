@@ -11,7 +11,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 .form-structor {
-  background-color: #222;
+  background-color: var(--tg-theme-bg-color);
   border-radius: 15px;
   height: 470px;
   width: 355px;
@@ -28,8 +28,8 @@ html, body {
   left: 0;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 750px;
-  background-image: url('https://i.ibb.co/D1B5zr0/back.png');
+  background-size: 800px;
+  background-image: url('https://i.ibb.co/Ykmhwtc/yesninib.png');
 }
 .form-structor .signup {
   position: absolute;
@@ -98,7 +98,7 @@ html, body {
   color: rgba(0, 0, 0, 0.338);
 }
 .form-structor .signup .submit-btn {
-  background-color: var(--tg-theme-button-color);
+  background-color: rgba(115, 138, 243, 0.664);
   color: var(--tg-theme-button-text-color);
   border: 0;
   border-radius: 15px;
@@ -115,7 +115,7 @@ html, body {
 }
 .form-structor .signup .submit-btn:hover {
   transition: all 0.3s ease;
-  background-color: rgba(115, 139, 243, 0.8);
+  background-color: rgba(90, 251, 186, 0.8);
 }
 .form-structor .login {
   position: absolute;
@@ -189,7 +189,7 @@ html, body {
   color: rgba(0, 0, 0, 0.4);
 }
 .form-structor .login .center .submit-btn {
-  background-color: var(--tg-theme-button-color);
+  background-color: rgba(255, 255, 255, 0.8);
   color: var(--tg-theme-button-text-color);
   border: 0;
   border-radius: 15px;
