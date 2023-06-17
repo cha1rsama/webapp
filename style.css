@@ -27,9 +27,9 @@ html, body {
   bottom: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: 400px;
-  background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf884ad570b50659c5fa2dc2cfb20ecf&auto=format&fit=crop&w=1000&q=100');
+  background-position: center;
+  background-size: 750px;
+  background-image: url('https://i.ibb.co/D1B5zr0/back.png');
 }
 .form-structor .signup {
   position: absolute;
@@ -43,7 +43,7 @@ html, body {
 .form-structor .signup.slide-up {
   top: 5%;
   -webkit-transform: translate(-50%, 0%);
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
 }
 .form-structor .signup.slide-up .form-holder, .form-structor .signup.slide-up .submit-btn {
   opacity: 0;
@@ -57,7 +57,7 @@ html, body {
   margin-right: 5px;
   opacity: 1;
   visibility: visible;
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0 0.5s ease;
 }
 .form-structor .signup .form-title {
   color: #fff;
@@ -68,16 +68,16 @@ html, body {
   color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
 }
 .form-structor .signup .form-holder {
   border-radius: 15px;
-  background-color: #fff;
+  background-color: #ffffff00;
   overflow: hidden;
   margin-top: 50px;
   opacity: 1;
   visibility: visible;
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
 }
 .form-structor .signup .form-holder .input {
   border: 0;
@@ -87,7 +87,7 @@ html, body {
   height: 30px;
   line-height: 30px;
   padding: 8px 15px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #bd525200;
   width: 100%;
   font-size: 12px;
 }
@@ -95,11 +95,11 @@ html, body {
   border-bottom: 0;
 }
 .form-structor .signup .form-holder .input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.338);
 }
 .form-structor .signup .submit-btn {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: rgba(255, 255, 255, 0.7);
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
   border: 0;
   border-radius: 15px;
   display: block;
@@ -115,7 +115,7 @@ html, body {
 }
 .form-structor .signup .submit-btn:hover {
   transition: all 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(115, 139, 243, 0.8);
 }
 .form-structor .login {
   position: absolute;
@@ -123,7 +123,7 @@ html, body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: #8eaae3;
   z-index: 5;
   -webkit-transition: all 0.3s ease;
 }
@@ -133,7 +133,7 @@ html, body {
   left: 50%;
   top: -20px;
   -webkit-transform: translate(-50%, 0);
-  background-color: #fff;
+  background-color: #8eaae3;
   width: 200%;
   height: 250px;
   border-radius: 50%;
@@ -158,7 +158,7 @@ html, body {
   color: rgba(0, 0, 0, 0.4);
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
 }
 .form-structor .login .center .form-holder {
   border-radius: 15px;
@@ -168,7 +168,7 @@ html, body {
   margin-top: 50px;
   opacity: 1;
   visibility: visible;
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
 }
 .form-structor .login .center .form-holder .input {
   border: 0;
@@ -178,7 +178,7 @@ html, body {
   height: 30px;
   line-height: 30px;
   padding: 8px 15px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #00000063;
   width: 100%;
   font-size: 12px;
 }
@@ -189,8 +189,8 @@ html, body {
   color: rgba(0, 0, 0, 0.4);
 }
 .form-structor .login .center .submit-btn {
-  background-color: #6B92A4;
-  color: rgba(255, 255, 255, 0.7);
+  background-color: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
   border: 0;
   border-radius: 15px;
   display: block;
@@ -206,32 +206,32 @@ html, body {
 }
 .form-structor .login .center .submit-btn:hover {
   transition: all 0.3s ease;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(141, 249, 148, 0.8);
 }
 .form-structor .login.slide-up {
   top: 90%;
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
 }
 .form-structor .login.slide-up .center {
   top: 10%;
   -webkit-transform: translate(-50%, 0%);
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
 }
 .form-structor .login.slide-up .form-holder, .form-structor .login.slide-up .submit-btn {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
 }
 .form-structor .login.slide-up .form-title {
   font-size: 1em;
   margin: 0;
   padding: 0;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
 }
 .form-structor .login.slide-up .form-title span {
   margin-right: 5px;
   opacity: 1;
   visibility: visible;
-  -webkit-transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
 }
