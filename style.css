@@ -28,7 +28,7 @@ html, body {
   bottom: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: 850px;
   background-image: url('https://i.ibb.co/Ykmhwtc/yesninib.png');
 }
