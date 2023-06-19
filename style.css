@@ -13,10 +13,8 @@ html, body {
 .form-structor {
   background-color: var(--tg-theme-bg-color);
   border-radius: 15px;
-  max-height: 470px;
-	height: 100%;
-	max-width: 355px;
-	width: 100%;
+  height: 470px;
+  width: 355px;
   position: relative;
   overflow: hidden;
 }
