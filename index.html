@@ -13,12 +13,12 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, minimum scale=
             <input type="email" class="input" placeholder="Email" id="email" />
             <input type="password" class="input" placeholder="Password" id="password" />
         </div>
-<button id="submit" type="submit" class="submit-btn">Log in</button>
+<button id="submit" class="submit-btn">Log in</button>
     </form>
     <script>
 let tg = window.Telegram.WebApp;
 let submit = document.getElementById("submit");
-submit.addEventListener("submit", () => {
+submit.addEventListener("click", () => {
  window.Telegram.WebApp.close();
 })
 
