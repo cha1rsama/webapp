@@ -19,17 +19,6 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, minimum scale=
 let tg = window.Telegram.WebApp;
 let submit = document.getElementById("submit");
 submit.addEventListener("click", () => {
-    fetch("https://api.oneapp.ly/auth/login", {method: "POST",
-   body: JSON.stringify({
-        "login": username,
-        "password": password  
-   }),
-   headers: {
-     "Content-type": "application/json; charset=UTF-8"
-   }
- })
-  .then((response) => response.json())
-  .then((json) => console.log(json));
   tg.close();
 })
 
