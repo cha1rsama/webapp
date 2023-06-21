@@ -5,8 +5,7 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, minimum scale=
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 <body>  
-    <script src="app.js"></script>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
     <form id="form" onsubmit="submitFunction()">
     <h2 class="form-title" id="login">Hello, please authorize</h2>
         <div class="form-holder">
@@ -15,12 +14,12 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, minimum scale=
         </div>
 <button id="submit" class="submit-btn">Log in</button>
     </form>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
 let tg = window.Telegram.WebApp;
 let submit = document.getElementById("submit");
 submit.addEventListener("click", () => {
  window.Telegram.WebApp.close();
 })
-
     </script>
 </body>
