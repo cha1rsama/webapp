@@ -30,7 +30,7 @@
             return;
         }
         let response =  await fetch("https://api.oneapp.ly/auth/login", {method: "POST",
-       body: JSON.stringify(data),
+       body: data,
        headers: {
          "Content-type": "application/json; charset=UTF-8"
        }
