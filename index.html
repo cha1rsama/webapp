@@ -20,13 +20,11 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, minimum scale=
 let tg = window.Telegram.WebApp;
 let submit = document.getElementById("submit");
 submit.addEventListener("click", () => {
-     document.getElementById("error").innerText = '';
-    let username= document.getElementById('email')
-    let password= document.getElementById('password')
-    let data={
-        "login": username,
-        "password": password  
-   }
+    let username = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+    let data={};
+   data.login = username;
+   data.password = password;
      if (password.length < 8) {
         document.getElementById("error").innerText = 'Minimum 8 characters!';
         return;
@@ -39,8 +37,7 @@ submit.addEventListener("click", () => {
  })
   .then(response => response.json())
   .then(json => tg.sendData(json))
-  window.Telegram.WebApp.close();
-    
+
  tg.close();
 })
     </script>
