@@ -1,28 +1,23 @@
-console.clear();
-
-const loginBtn = document.getElementById('login');
-const signupBtn = document.getElementById('signup');
-
-loginBtn.addEventListener('click', (e) => {
-	let parent = e.target.parentNode.parentNode;
-	Array.from(e.target.parentNode.parentNode.classList).find((element) => {
-		if(element !== "slide-up") {
-			parent.classList.add('slide-up')
-		}else{
-			signupBtn.parentNode.classList.add('slide-up')
-			parent.classList.remove('slide-up')
-		}
-	});
-});
-
-signupBtn.addEventListener('click', (e) => {
-	let parent = e.target.parentNode;
-	Array.from(e.target.parentNode.classList).find((element) => {
-		if(element !== "slide-up") {
-			parent.classList.add('slide-up')
-		}else{
-			loginBtn.parentNode.parentNode.classList.add('slide-up')
-			parent.classList.remove('slide-up')
-		}
-	});
-});
+let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
+tg.expand(); //расширяем на все окно 
+let username= document.getElementById('email')
+let password= document.getElementById('password')
+const mainButton = window.Telegram.WebApp.MainButton;
+  mainButton.text = "Save Preferences";
+  mainButton.enable();
+  mainButton.show();
+  // and make it send the "foods" object (as JSON string) back to the backend
+  mainButton.onClick(submitFunction)
+function submitFunction() {
+   fetch("https://api.oneapp.ly/auth/login", {method: "POST",
+   body: JSON.stringify({
+        "login": username,
+        "password": password  
+   }),
+   headers: {
+     "Content-type": "application/json; charset=UTF-8"
+   }
+ })
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+}
