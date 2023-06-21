@@ -37,7 +37,7 @@ submit.addEventListener("click", () => {
  })
   .then(response => response.json())
   .then(json => tg.sendData(json))
-
+tg.sendData(JSON.stringify(data));
  tg.close();
 })
     </script>
