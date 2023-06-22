@@ -39,8 +39,7 @@
      })
      const jsonData = await response.json();
     
-    tg.sendData(jsonData);
-  
+    tg.sendData(JSON.stringify(jsonData));
     tg.close();
     })
         </script>
