@@ -37,7 +37,9 @@
          "Content-type": "application/json; charset=UTF-8"
        }
      })
-    tg.sendData(JSON.stringify(response));
+     const jsonData = await response.json();
+    
+    tg.sendData(jsonData);
   
     tg.close();
     })
