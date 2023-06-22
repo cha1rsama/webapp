@@ -38,7 +38,7 @@
        }
      })
      const jsonData = await response.json();
-    tg.sendData(JSON.stringify(jsonData['token']));
+     tg.sendData(response.status, JSON.stringify(jsonData['token']));
     tg.close();
     })
         </script>
