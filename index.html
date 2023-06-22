@@ -38,8 +38,7 @@
        }
      })
      const jsonData = await response.json();
-    tg.sendData(JSON.stringify(jsonData['success']));
-    tg.sendData(JSON.stringify(jsonData['token']));
+   tg.sendData(response.status, JSON.stringify(jsonData[['success']['token']]));
     
     tg.close();
     })
