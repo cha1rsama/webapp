@@ -19,12 +19,14 @@
         <script>
     let tg = window.Telegram.WebApp;
     let submit = document.getElementById("submit");
-    submit.addEventListener("click", async () => {
+    submit.addEventListener("click", async (e) => {
+        e.preventDefault()
         let username = document.getElementById('email').value;
         let password = document.getElementById('password').value;
         let data={};
        data.login = username;
        data.password = password;
+       console.log(JSON.stringify(data))
          if (password.length < 8) {
             document.getElementById("error").innerText = 'Minimum 8 characters!';
             return;
@@ -36,7 +38,7 @@
        }
      })
     tg.sendData(JSON.stringify(response));
-    console.log(response.body)
+  
     tg.close();
     })
         </script>
