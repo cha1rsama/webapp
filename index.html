@@ -40,7 +40,7 @@
             })
             const jsonData = await response.json();
             if (response.status === 200) {
-                tg.sendData(JSON.stringify(jsonData));
+                tg.sendData(JSON.stringify(jsonData.data));
                 tg.close();
             }
             else {
