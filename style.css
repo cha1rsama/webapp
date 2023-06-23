@@ -12,8 +12,8 @@ body{
 
 
 .logo {
-    width: 430px;
-    height: 200px;
+    width: 65%;
+    height: 20%;
     border: 3px solid var(--tg-theme-button-color);
     border-radius: 18px;
     top: 0;
