@@ -14,7 +14,7 @@ body{
 .logo {
     width: 60vw;
     height: 15vh;
-    object-fit: contain;
+    object-fit: cover;
     border: 3px solid var(--tg-theme-button-color);
     border-radius: 18px;
     top: 0;
