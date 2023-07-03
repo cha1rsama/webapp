@@ -31,7 +31,7 @@
                 document.getElementById("error").innerText = 'Minimum 8 characters!';
                 return;
             }
-            let response = await fetch("https://api.oneapp.ly/auth/login", {
+            let response = await fetch("https://dev.oneapp.ly/auth/login", {
                 method: "POST",
                 body: JSON.stringify(data),
                 headers: {
