@@ -40,7 +40,7 @@
             })
            const jsonData = await response.json();
             if (response.status === 200) {
-                if (jsonData['user']['role']='applicant') {
+                if (jsonData['user']['role']=='applicant') {
                     tg.sendData('applicant')
                     tg.close();
                 }
