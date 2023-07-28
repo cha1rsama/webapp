@@ -40,10 +40,15 @@
             })
            const jsonData = await response.json();
             if (response.status === 200) {
-                let token = jsonData['token']
-                let role = jsonData['user']['role']
-                tg.sendData(JSON.stringify((token, role));
+                if (jsonData['user']['role']='applicant') {
+                    tg.sendData('applicant')
+                    tg.close();
+                }
+                else {
+                tg.sendData(JSON.stringify(jsonData['token']);
                 tg.close();
+                }
+
             }
             else {
                 document.getElementById("error").innerText = 'Wrong e-mail or password, please correct';
