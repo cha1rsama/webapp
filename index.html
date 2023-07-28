@@ -40,7 +40,7 @@
             })
            const jsonData = await response.json();
             if (response.status === 200) {
-                tg.sendData(JSON.stringify(jsonData['user']['role']));
+                tg.sendData(JSON.stringify((jsonData['token'], jsonData['user']['role'])));
                 tg.close();
             }
             else {
